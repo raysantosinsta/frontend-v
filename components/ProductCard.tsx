@@ -17,7 +17,7 @@ interface ProductCardProps {
 }
 
 export function ProductCard({ product, whatsappNumber }: ProductCardProps) {
-  const message = `Oi, vi o ${product.name} de R$ ${product.price} no seu catálogo, ainda tem na loja?`;
+  const message = `Oi, vi o ${product.name} de R$ ${product.price} no seu catálogo, ainda tem na loja?\n\nVeja a imagem do produto: ${product.imageUrl}`;
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
